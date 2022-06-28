@@ -93,7 +93,6 @@ const updateBlog = async function (req, res) {
 
 const getBlog = async function (req, res) {
   try {
-    let data = req.body;
     let searchCondition = { isDeleted: false, isPublished: true };
 
     if (req.query.authorId) {
